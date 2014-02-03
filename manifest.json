@@ -1,0 +1,19 @@
+{
+  "name": "Gambit Scheme",
+  "description": "Gambit Scheme interactive shell built using Native Client",
+  "version": "4.7.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icon_16.png",
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [
+    "storage"
+  ]
+}

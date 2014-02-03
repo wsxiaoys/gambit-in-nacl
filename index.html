@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gambit Scheme Interpreter</title>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
+    <META HTTP-EQUIV="Expires" CONTENT="-1" />
+
+    <script type="text/javascript" src="hterm.concat.js"></script>
+    <script type="text/javascript" src="naclterm.js"></script>
+    <script type="text/javascript" src="gambc.js"></script>
+
+    <style type="text/css">
+      #terminal {
+        position: relative;
+        display: block;
+        width: 95%;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><b>Gambit Scheme Interpreter</b></p>
+    <p>This example shows the Gambit Scheme interpreter running in Native Client.  By
+    default it runs the an interactive REPL (Run Eval Print Loop), but can also
+    run Gambit Scheme files from its virtual file system. ( Uploaded files located at
+    /mnt/html5 ) </p>
+    <input type="file" id="upload" multiple="multiple" onchange="uploadFiles" />
+    <div id="terminal"></div>
+    <button onclick='term_.onVTKeystroke("(load \"/mnt/http/pi\")\r(time (pi 10000))\r")'>10000 digits of &pi;</button>
+    <button onclick='term_.onVTKeystroke("(directory-files \"/\")\r")'>list files</button>
+    <button onclick='term_.onVTKeystroke("(define (f x) (+ 0.5 (/ 1 x)))\r(trace f)\r(f 5)\r(f 0)\r,be\r,(c 3)\r");'>simple debugging</button>
+  </body>
+</html>
