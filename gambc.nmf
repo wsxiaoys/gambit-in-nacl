@@ -4,6 +4,9 @@
     "x86-64": {
       "url": "gambc_x86_64.nexe"
     },
+    "arm": {
+      "url": "gambc_arm.nexe"
+    },
     "x86-32": {
       "url": "gambc_x86_32.nexe"
     }

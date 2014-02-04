@@ -14910,7 +14910,7 @@ lib.resource.add('hterm/audio/bell', 'audio/ogg;base64',
 );
 
 lib.resource.add('hterm/concat/date', 'text/plain',
-'Mon, 03 Feb 2014 09:26:17 +0000' +
+'Tue, 04 Feb 2014 07:52:07 +0000' +
 ''
 );
 
